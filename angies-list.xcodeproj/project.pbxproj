@@ -13,6 +13,9 @@
 		664C12DE2414289000FD9A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664C12DD2414289000FD9A62 /* Assets.xcassets */; };
 		664C12E12414289000FD9A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664C12DF2414289000FD9A62 /* LaunchScreen.storyboard */; };
 		664C12EC2414289000FD9A62 /* angies_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C12EB2414289000FD9A62 /* angies_listTests.swift */; };
+		66D1D90624142B86008E7568 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90524142B86008E7568 /* ServiceProvider.swift */; };
+		66D1D90824142F05008E7568 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90724142F05008E7568 /* APIService.swift */; };
+		66D1D90B24142F3F008E7568 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90A24142F3E008E7568 /* URLSessionExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		664C12E72414289000FD9A62 /* angies-listTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "angies-listTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		664C12EB2414289000FD9A62 /* angies_listTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = angies_listTests.swift; sourceTree = "<group>"; };
 		664C12ED2414289000FD9A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D1D90524142B86008E7568 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		66D1D90724142F05008E7568 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		66D1D90A24142F3E008E7568 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				664C12F62414298F00FD9A62 /* Delegates */,
-				664C12F824142A3D00FD9A62 /* Storyboard */,
+				66D1D90124142B35008E7568 /* Models */,
+				66D1D90424142B50008E7568 /* Services */,
+				66D1D90324142B49008E7568 /* ViewControllers */,
+				66D1D90224142B3F008E7568 /* Views */,
+				664C12F824142A3D00FD9A62 /* Storyboards */,
+				66D1D90924142F1A008E7568 /* Extensions */,
 				664C12F7241429A800FD9A62 /* Resources */,
 			);
 			path = "angies-list";
@@ -112,12 +123,50 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		664C12F824142A3D00FD9A62 /* Storyboard */ = {
+		664C12F824142A3D00FD9A62 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				664C12DA2414288F00FD9A62 /* Main.storyboard */,
 			);
-			path = Storyboard;
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		66D1D90124142B35008E7568 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66D1D90524142B86008E7568 /* ServiceProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66D1D90224142B3F008E7568 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66D1D90324142B49008E7568 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		66D1D90424142B50008E7568 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66D1D90724142F05008E7568 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		66D1D90924142F1A008E7568 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66D1D90A24142F3E008E7568 /* URLSessionExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D1D90624142B86008E7568 /* ServiceProvider.swift in Sources */,
 				664C12D52414288F00FD9A62 /* AppDelegate.swift in Sources */,
+				66D1D90B24142F3F008E7568 /* URLSessionExtension.swift in Sources */,
+				66D1D90824142F05008E7568 /* APIService.swift in Sources */,
 				664C12D72414288F00FD9A62 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
