@@ -16,6 +16,7 @@
 		66D1D90624142B86008E7568 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90524142B86008E7568 /* ServiceProvider.swift */; };
 		66D1D90824142F05008E7568 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90724142F05008E7568 /* APIService.swift */; };
 		66D1D90B24142F3F008E7568 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90A24142F3E008E7568 /* URLSessionExtension.swift */; };
+		66D1D90D24142F93008E7568 /* ServiceProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90C24142F93008E7568 /* ServiceProviderService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		66D1D90524142B86008E7568 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		66D1D90724142F05008E7568 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		66D1D90A24142F3E008E7568 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
+		66D1D90C24142F93008E7568 /* ServiceProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				66D1D90724142F05008E7568 /* APIService.swift */,
+				66D1D90C24142F93008E7568 /* ServiceProviderService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				66D1D90624142B86008E7568 /* ServiceProvider.swift in Sources */,
 				664C12D52414288F00FD9A62 /* AppDelegate.swift in Sources */,
+				66D1D90D24142F93008E7568 /* ServiceProviderService.swift in Sources */,
 				66D1D90B24142F3F008E7568 /* URLSessionExtension.swift in Sources */,
 				66D1D90824142F05008E7568 /* APIService.swift in Sources */,
 				664C12D72414288F00FD9A62 /* SceneDelegate.swift in Sources */,
