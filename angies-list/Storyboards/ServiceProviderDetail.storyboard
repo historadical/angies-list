@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Service Provider Detail View Controller-->
         <scene sceneID="icE-Hs-Gu5">
             <objects>
-                <viewController id="u2P-bf-fxn" sceneMemberID="viewController">
+                <viewController id="u2P-bf-fxn" customClass="ServiceProviderDetailViewController" customModule="angies_list" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfV-Qe-3qi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +110,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="W24-Ut-jQe" id="fGR-X6-cch"/>
+                        <outlet property="mapView" destination="3u3-dx-UtP" id="AEI-1e-S3t"/>
+                        <outlet property="nameLabel" destination="0Rn-aF-9Qd" id="v5t-KR-nsq"/>
+                        <outlet property="ratingLabel" destination="lns-6b-eHt" id="ELR-KY-KDZ"/>
+                        <outlet property="reviewsLabel" destination="7Us-zh-9PA" id="dGB-rS-GFO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ilw-7N-HJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
