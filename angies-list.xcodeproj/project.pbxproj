@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		664C12D52414288F00FD9A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C12D42414288F00FD9A62 /* AppDelegate.swift */; };
 		664C12D72414288F00FD9A62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C12D62414288F00FD9A62 /* SceneDelegate.swift */; };
-		664C12D92414288F00FD9A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C12D82414288F00FD9A62 /* ViewController.swift */; };
 		664C12DC2414288F00FD9A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664C12DA2414288F00FD9A62 /* Main.storyboard */; };
 		664C12DE2414289000FD9A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664C12DD2414289000FD9A62 /* Assets.xcassets */; };
 		664C12E12414289000FD9A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664C12DF2414289000FD9A62 /* LaunchScreen.storyboard */; };
@@ -30,7 +29,6 @@
 		664C12D12414288F00FD9A62 /* angies-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "angies-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		664C12D42414288F00FD9A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		664C12D62414288F00FD9A62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		664C12D82414288F00FD9A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		664C12DB2414288F00FD9A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		664C12DD2414289000FD9A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		664C12E02414289000FD9A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,13 +77,9 @@
 		664C12D32414288F00FD9A62 /* angies-list */ = {
 			isa = PBXGroup;
 			children = (
-				664C12D42414288F00FD9A62 /* AppDelegate.swift */,
-				664C12D62414288F00FD9A62 /* SceneDelegate.swift */,
-				664C12D82414288F00FD9A62 /* ViewController.swift */,
-				664C12DA2414288F00FD9A62 /* Main.storyboard */,
-				664C12DD2414289000FD9A62 /* Assets.xcassets */,
-				664C12DF2414289000FD9A62 /* LaunchScreen.storyboard */,
-				664C12E22414289000FD9A62 /* Info.plist */,
+				664C12F62414298F00FD9A62 /* Delegates */,
+				664C12F824142A3D00FD9A62 /* Storyboard */,
+				664C12F7241429A800FD9A62 /* Resources */,
 			);
 			path = "angies-list";
 			sourceTree = "<group>";
@@ -97,6 +91,33 @@
 				664C12ED2414289000FD9A62 /* Info.plist */,
 			);
 			path = "angies-listTests";
+			sourceTree = "<group>";
+		};
+		664C12F62414298F00FD9A62 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				664C12D42414288F00FD9A62 /* AppDelegate.swift */,
+				664C12D62414288F00FD9A62 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		664C12F7241429A800FD9A62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				664C12DD2414289000FD9A62 /* Assets.xcassets */,
+				664C12DF2414289000FD9A62 /* LaunchScreen.storyboard */,
+				664C12E22414289000FD9A62 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		664C12F824142A3D00FD9A62 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				664C12DA2414288F00FD9A62 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +221,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664C12D92414288F00FD9A62 /* ViewController.swift in Sources */,
 				664C12D52414288F00FD9A62 /* AppDelegate.swift in Sources */,
 				664C12D72414288F00FD9A62 /* SceneDelegate.swift in Sources */,
 			);
@@ -363,11 +383,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "angies-list/Info.plist";
+				CURRENT_PROJECT_VERSION = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/angies-list/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geektastic.iOS-Code-Challenge.angies-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -380,11 +402,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "angies-list/Info.plist";
+				CURRENT_PROJECT_VERSION = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/angies-list/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geektastic.iOS-Code-Challenge.angies-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
