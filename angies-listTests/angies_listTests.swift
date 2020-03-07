@@ -32,7 +32,9 @@ class angies_listTests: XCTestCase {
             let serviceProvidersJSON = try? JSONSerialization.jsonObject(with: data!) as? [String: Any]
             let serviceProvidersArray = serviceProvidersJSON!["serviceproviders"] as? [[String: Any]]
             let serviceProviders: [ServiceProvider] = serviceProvidersArray!.compactMap { ServiceProvider(json: $0) }
-            XCTAssertTrue(serviceProviders.count > 0)
+            XCTAssertTrue(serviceProviders.count == 10)
+            XCTAssertEqual(serviceProviders.first?.name, "William J Ciriello Plumbing Co Inc")
+            XCTAssertEqual(serviceProviders[8].name, "Godby Heating Plumbing Electrical")
             expect.fulfill()
         }
 

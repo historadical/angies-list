@@ -14,8 +14,101 @@
                     <view key="view" contentMode="scaleToFill" id="bfV-Qe-3qi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3u3-dx-UtP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="n0p-Wr-PIw">
+                                <rect key="frame" x="8" y="500" width="398" height="105.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cx2-rU-iB4">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Johnson Heating &amp; Cooling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rn-aF-9Qd">
+                                                <rect key="frame" x="0.0" y="0.0" width="398" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indianapolis, Indiana 46237" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W24-Ut-jQe">
+                                                <rect key="frame" x="0.0" y="32" width="398" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QPO-Yn-hYr">
+                                        <rect key="frame" x="0.0" y="85" width="398" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews: 347" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Us-zh-9PA">
+                                                <rect key="frame" x="0.0" y="0.0" width="199" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade: A" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lns-6b-eHt">
+                                                <rect key="frame" x="199" y="0.0" width="199" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="n0p-Wr-PIw" firstAttribute="top" secondItem="3u3-dx-UtP" secondAttribute="bottom" constant="8" id="4tK-6D-hm7"/>
+                            <constraint firstItem="3u3-dx-UtP" firstAttribute="height" secondItem="bfV-Qe-3qi" secondAttribute="height" multiplier="1/2" id="IMp-2z-IaC"/>
+                            <constraint firstItem="3u3-dx-UtP" firstAttribute="leading" secondItem="jhM-W4-FYD" secondAttribute="leading" id="OfD-9Z-mhk"/>
+                            <constraint firstItem="3u3-dx-UtP" firstAttribute="width" secondItem="bfV-Qe-3qi" secondAttribute="width" multiplier="1/2" id="PJh-9W-gw5"/>
+                            <constraint firstItem="n0p-Wr-PIw" firstAttribute="leading" secondItem="3u3-dx-UtP" secondAttribute="trailing" constant="8" id="Uea-ou-OyT"/>
+                            <constraint firstItem="n0p-Wr-PIw" firstAttribute="top" secondItem="jhM-W4-FYD" secondAttribute="top" constant="8" id="WJE-Ia-mph"/>
+                            <constraint firstItem="3u3-dx-UtP" firstAttribute="top" secondItem="jhM-W4-FYD" secondAttribute="top" id="dHz-Nm-zus"/>
+                            <constraint firstAttribute="bottom" secondItem="3u3-dx-UtP" secondAttribute="bottom" constant="20" symbolic="YES" id="dek-Md-34R"/>
+                            <constraint firstItem="3u3-dx-UtP" firstAttribute="height" secondItem="bfV-Qe-3qi" secondAttribute="height" multiplier="1/2" id="fEC-Xj-jGN"/>
+                            <constraint firstItem="n0p-Wr-PIw" firstAttribute="leading" secondItem="jhM-W4-FYD" secondAttribute="leading" constant="8" id="okx-8r-ER7"/>
+                            <constraint firstItem="jhM-W4-FYD" firstAttribute="trailing" secondItem="n0p-Wr-PIw" secondAttribute="trailing" constant="8" id="tkz-FF-UaU"/>
+                            <constraint firstItem="jhM-W4-FYD" firstAttribute="trailing" secondItem="n0p-Wr-PIw" secondAttribute="trailing" constant="8" id="uSj-c5-eHp"/>
+                            <constraint firstItem="jhM-W4-FYD" firstAttribute="trailing" secondItem="3u3-dx-UtP" secondAttribute="trailing" id="wIZ-ow-hvm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jhM-W4-FYD"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IMp-2z-IaC"/>
+                                <exclude reference="PJh-9W-gw5"/>
+                                <exclude reference="dek-Md-34R"/>
+                                <exclude reference="fEC-Xj-jGN"/>
+                                <exclude reference="tkz-FF-UaU"/>
+                                <exclude reference="uSj-c5-eHp"/>
+                                <exclude reference="wIZ-ow-hvm"/>
+                                <exclude reference="4tK-6D-hm7"/>
+                                <exclude reference="Uea-ou-OyT"/>
+                                <exclude reference="WJE-Ia-mph"/>
+                                <exclude reference="okx-8r-ER7"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="IMp-2z-IaC"/>
+                                <include reference="tkz-FF-UaU"/>
+                                <include reference="wIZ-ow-hvm"/>
+                                <include reference="4tK-6D-hm7"/>
+                                <include reference="okx-8r-ER7"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="PJh-9W-gw5"/>
+                                <include reference="dek-Md-34R"/>
+                                <exclude reference="fEC-Xj-jGN"/>
+                                <include reference="uSj-c5-eHp"/>
+                                <include reference="Uea-ou-OyT"/>
+                                <include reference="WJE-Ia-mph"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ilw-7N-HJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

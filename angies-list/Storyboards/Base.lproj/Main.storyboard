@@ -32,12 +32,53 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X recent reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wH-Ao-gCn">
+                                            <rect key="frame" x="58" y="16" width="336" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="QcO-BD-TaV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beech Grove, Indiana 46107" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxX-z2-Maw">
+                                            <rect key="frame" x="58" y="165" width="336" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CHl-8i-Y8A">
+                                            <rect key="frame" x="58" y="44" width="336" height="33.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="8wH-Ao-gCn" firstAttribute="width" secondItem="HxX-z2-Maw" secondAttribute="width" id="3ME-Ov-wm5"/>
+                                        <constraint firstItem="8wH-Ao-gCn" firstAttribute="height" secondItem="HxX-z2-Maw" secondAttribute="height" multiplier="0.952381" id="4vU-wF-zfD"/>
+                                        <constraint firstItem="HxX-z2-Maw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CHl-8i-Y8A" secondAttribute="bottom" constant="8" id="5Kf-GA-NEE"/>
+                                        <constraint firstItem="CHl-8i-Y8A" firstAttribute="top" secondItem="8wH-Ao-gCn" secondAttribute="bottom" constant="8" id="A6I-k5-8OK"/>
+                                        <constraint firstItem="CHl-8i-Y8A" firstAttribute="trailing" secondItem="8wH-Ao-gCn" secondAttribute="trailing" id="Gv7-eC-BYz"/>
+                                        <constraint firstItem="HxX-z2-Maw" firstAttribute="bottom" secondItem="6Ge-WN-fNX" secondAttribute="bottomMargin" id="KNJ-Wt-FsZ"/>
                                         <constraint firstItem="1kv-6T-fZ7" firstAttribute="leading" secondItem="6Ge-WN-fNX" secondAttribute="leadingMargin" id="MpP-BK-QKd"/>
                                         <constraint firstItem="1kv-6T-fZ7" firstAttribute="top" secondItem="6Ge-WN-fNX" secondAttribute="topMargin" id="RaJ-h5-xac"/>
+                                        <constraint firstItem="CHl-8i-Y8A" firstAttribute="leading" secondItem="8wH-Ao-gCn" secondAttribute="leading" id="TMR-Mp-uyR"/>
+                                        <constraint firstItem="CHl-8i-Y8A" firstAttribute="trailing" secondItem="6Ge-WN-fNX" secondAttribute="trailingMargin" id="UgA-aM-MPM"/>
+                                        <constraint firstItem="CHl-8i-Y8A" firstAttribute="width" secondItem="8wH-Ao-gCn" secondAttribute="width" id="YNF-m8-BV7"/>
+                                        <constraint firstItem="HxX-z2-Maw" firstAttribute="leading" secondItem="8wH-Ao-gCn" secondAttribute="leading" id="anv-pN-90w"/>
+                                        <constraint firstItem="8wH-Ao-gCn" firstAttribute="top" secondItem="6Ge-WN-fNX" secondAttribute="topMargin" constant="5" id="bOt-Mo-xoL"/>
+                                        <constraint firstItem="8wH-Ao-gCn" firstAttribute="trailing" secondItem="6Ge-WN-fNX" secondAttribute="trailingMargin" id="h68-Il-JD1"/>
+                                        <constraint firstItem="HxX-z2-Maw" firstAttribute="trailing" secondItem="8wH-Ao-gCn" secondAttribute="trailing" id="mlJ-b9-qOS"/>
+                                        <constraint firstItem="8wH-Ao-gCn" firstAttribute="leading" secondItem="1kv-6T-fZ7" secondAttribute="trailing" constant="8" id="xGl-W6-QSH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="HxX-z2-Maw" id="JIo-JR-vSf"/>
+                                    <outlet property="nameLabel" destination="CHl-8i-Y8A" id="aK7-Kc-DAV"/>
+                                    <outlet property="ratingLabel" destination="1kv-6T-fZ7" id="gqa-hN-bI2"/>
+                                    <outlet property="reviewsLabel" destination="8wH-Ao-gCn" id="Keg-25-gRx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -56,8 +97,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q5Z-gg-IK8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="uII-6N-qQc">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uII-6N-qQc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

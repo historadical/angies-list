@@ -21,6 +21,7 @@
 		66D1D911241432D3008E7568 /* ServiceProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D910241432D3008E7568 /* ServiceProviderTableViewCell.swift */; };
 		66D1D913241433EF008E7568 /* ServiceProviderRatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D912241433EF008E7568 /* ServiceProviderRatingLabel.swift */; };
 		66D1D91724143523008E7568 /* ServiceProvidersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D91624143523008E7568 /* ServiceProvidersTableViewController.m */; };
+		66D1D9192414452E008E7568 /* ServiceProviderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D9182414452E008E7568 /* ServiceProviderDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		66D1D91424143523008E7568 /* angies-list-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "angies-list-Bridging-Header.h"; sourceTree = "<group>"; };
 		66D1D91524143523008E7568 /* ServiceProvidersTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceProvidersTableViewController.h; sourceTree = "<group>"; };
 		66D1D91624143523008E7568 /* ServiceProvidersTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceProvidersTableViewController.m; sourceTree = "<group>"; };
+		66D1D9182414452E008E7568 /* ServiceProviderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			children = (
 				66D1D91524143523008E7568 /* ServiceProvidersTableViewController.h */,
 				66D1D91624143523008E7568 /* ServiceProvidersTableViewController.m */,
+				66D1D9182414452E008E7568 /* ServiceProviderDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				66D1D911241432D3008E7568 /* ServiceProviderTableViewCell.swift in Sources */,
 				66D1D90824142F05008E7568 /* APIService.swift in Sources */,
 				664C12D72414288F00FD9A62 /* SceneDelegate.swift in Sources */,
+				66D1D9192414452E008E7568 /* ServiceProviderDetailViewController.swift in Sources */,
 				66D1D91724143523008E7568 /* ServiceProvidersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

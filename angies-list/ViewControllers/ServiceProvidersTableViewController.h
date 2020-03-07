@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class ServiceProviderTableViewCell;
+@class ServiceProviderService;
 @class ServiceProvider;
 
 NS_ASSUME_NONNULL_BEGIN

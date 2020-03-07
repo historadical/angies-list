@@ -11,8 +11,8 @@ import UIKit
 @objc
 class ServiceProviderTableViewCell: UITableViewCell {
 
-    @IBOutlet var ratingLabel: UILabel!
-    @IBOutlet var reviewsLabel: ServiceProviderRatingLabel!
+    @IBOutlet var ratingLabel: ServiceProviderRatingLabel!
+    @IBOutlet var reviewsLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
 
