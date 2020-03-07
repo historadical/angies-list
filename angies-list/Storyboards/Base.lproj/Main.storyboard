@@ -9,18 +9,34 @@
         <!--Service Providers-->
         <scene sceneID="5dA-Jd-U1k">
             <objects>
-                <tableViewController id="y0j-uF-6aa" sceneMemberID="viewController">
+                <tableViewController id="y0j-uF-6aa" customClass="ServiceProvidersTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i8W-5o-fUe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="197" id="wgw-yV-ELJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceProviderCell" rowHeight="197" id="wgw-yV-ELJ" customClass="ServiceProviderTableViewCell" customModule="angies_list" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="197"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wgw-yV-ELJ" id="6Ge-WN-fNX">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kv-6T-fZ7" customClass="ServiceProviderRatingLabel" customModule="angies_list" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="11" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="Ktl-71-Nve"/>
+                                                <constraint firstAttribute="width" constant="30" id="vEh-pf-Xii"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1kv-6T-fZ7" firstAttribute="leading" secondItem="6Ge-WN-fNX" secondAttribute="leadingMargin" id="MpP-BK-QKd"/>
+                                        <constraint firstItem="1kv-6T-fZ7" firstAttribute="top" secondItem="6Ge-WN-fNX" secondAttribute="topMargin" id="RaJ-h5-xac"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

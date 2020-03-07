@@ -17,6 +17,10 @@
 		66D1D90824142F05008E7568 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90724142F05008E7568 /* APIService.swift */; };
 		66D1D90B24142F3F008E7568 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90A24142F3E008E7568 /* URLSessionExtension.swift */; };
 		66D1D90D24142F93008E7568 /* ServiceProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D90C24142F93008E7568 /* ServiceProviderService.swift */; };
+		66D1D90F24143292008E7568 /* ServiceProviderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D1D90E24143292008E7568 /* ServiceProviderDetail.storyboard */; };
+		66D1D911241432D3008E7568 /* ServiceProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D910241432D3008E7568 /* ServiceProviderTableViewCell.swift */; };
+		66D1D913241433EF008E7568 /* ServiceProviderRatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D912241433EF008E7568 /* ServiceProviderRatingLabel.swift */; };
+		66D1D91724143523008E7568 /* ServiceProvidersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D91624143523008E7568 /* ServiceProvidersTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,12 @@
 		66D1D90724142F05008E7568 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		66D1D90A24142F3E008E7568 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		66D1D90C24142F93008E7568 /* ServiceProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderService.swift; sourceTree = "<group>"; };
+		66D1D90E24143292008E7568 /* ServiceProviderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServiceProviderDetail.storyboard; sourceTree = "<group>"; };
+		66D1D910241432D3008E7568 /* ServiceProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderTableViewCell.swift; sourceTree = "<group>"; };
+		66D1D912241433EF008E7568 /* ServiceProviderRatingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderRatingLabel.swift; sourceTree = "<group>"; };
+		66D1D91424143523008E7568 /* angies-list-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "angies-list-Bridging-Header.h"; sourceTree = "<group>"; };
+		66D1D91524143523008E7568 /* ServiceProvidersTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceProvidersTableViewController.h; sourceTree = "<group>"; };
+		66D1D91624143523008E7568 /* ServiceProvidersTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceProvidersTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,7 @@
 				664C12DD2414289000FD9A62 /* Assets.xcassets */,
 				664C12DF2414289000FD9A62 /* LaunchScreen.storyboard */,
 				664C12E22414289000FD9A62 /* Info.plist */,
+				66D1D91424143523008E7568 /* angies-list-Bridging-Header.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				664C12DA2414288F00FD9A62 /* Main.storyboard */,
+				66D1D90E24143292008E7568 /* ServiceProviderDetail.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -144,6 +156,8 @@
 		66D1D90224142B3F008E7568 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				66D1D910241432D3008E7568 /* ServiceProviderTableViewCell.swift */,
+				66D1D912241433EF008E7568 /* ServiceProviderRatingLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +165,8 @@
 		66D1D90324142B49008E7568 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				66D1D91524143523008E7568 /* ServiceProvidersTableViewController.h */,
+				66D1D91624143523008E7568 /* ServiceProvidersTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -222,6 +238,7 @@
 				TargetAttributes = {
 					664C12D02414288F00FD9A62 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					664C12E62414289000FD9A62 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -253,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D1D90F24143292008E7568 /* ServiceProviderDetail.storyboard in Resources */,
 				664C12E12414289000FD9A62 /* LaunchScreen.storyboard in Resources */,
 				664C12DE2414289000FD9A62 /* Assets.xcassets in Resources */,
 				664C12DC2414288F00FD9A62 /* Main.storyboard in Resources */,
@@ -273,12 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D1D913241433EF008E7568 /* ServiceProviderRatingLabel.swift in Sources */,
 				66D1D90624142B86008E7568 /* ServiceProvider.swift in Sources */,
 				664C12D52414288F00FD9A62 /* AppDelegate.swift in Sources */,
 				66D1D90D24142F93008E7568 /* ServiceProviderService.swift in Sources */,
 				66D1D90B24142F3F008E7568 /* URLSessionExtension.swift in Sources */,
+				66D1D911241432D3008E7568 /* ServiceProviderTableViewCell.swift in Sources */,
 				66D1D90824142F05008E7568 /* APIService.swift in Sources */,
 				664C12D72414288F00FD9A62 /* SceneDelegate.swift in Sources */,
+				66D1D91724143523008E7568 /* ServiceProvidersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/angies-list/Resources/Info.plist";
@@ -448,6 +470,8 @@
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geektastic.iOS-Code-Challenge.angies-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "angies-list/Resources/angies-list-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/angies-list/Resources/Info.plist";
@@ -467,6 +492,7 @@
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geektastic.iOS-Code-Challenge.angies-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "angies-list/Resources/angies-list-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -11,24 +11,37 @@ import XCTest
 
 class angies_listTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    func test_serviceProvider_init_success() {
+        let url = URL(string: "http://private-895ba-angieslistcodingchallenge.apiary-mock.com/angieslist/codingChallenge/serviceproviders")!
+        let expect = expectation(description: "GET \(url)")
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        let session = URLSession.shared
+        let task = session.dataTask(with: url) { data, response, error in
+            XCTAssertNotNil(data, "data should not be nil")
+            XCTAssertNil(error, "error should be nil")
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+            if let httpResponse = response as? HTTPURLResponse,
+                let responseURL = httpResponse.url,
+                let mimeType = httpResponse.mimeType {
+                XCTAssertEqual(responseURL.absoluteString, url.absoluteString, "HTTP response URL should be equal to original URL")
+                XCTAssertEqual(httpResponse.statusCode, 200, "HTTP response status code should be 200")
+                XCTAssertEqual(mimeType, "application/json", "HTTP response content type should be application/json")
+            } else {
+                XCTFail("Response was not NSHTTPURLResponse")
+            }
+            let serviceProvidersJSON = try? JSONSerialization.jsonObject(with: data!) as? [String: Any]
+            let serviceProvidersArray = serviceProvidersJSON!["serviceproviders"] as? [[String: Any]]
+            let serviceProviders: [ServiceProvider] = serviceProvidersArray!.compactMap { ServiceProvider(json: $0) }
+            XCTAssertTrue(serviceProviders.count > 0)
+            expect.fulfill()
+        }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        task.resume()
+
+        waitForExpectations(timeout: task.originalRequest?.timeoutInterval ?? 30) { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
         }
     }
-
 }
